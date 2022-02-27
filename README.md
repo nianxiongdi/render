@@ -51,7 +51,7 @@
 `css加载不会DOM解析，会阻塞DOM渲染` - `03test.html`
 
 
-`js加载会等待css嘛？` - `需要等待css加载，才可以加载js`  - `04test.html`
+`js加载会等待css嘛？` - `需要等待css加载，才可以加载js`,说明`css加载会阻塞后面js语句的执行`  - `04test.html`
 
 
 `css会不会影响dom ready`  
@@ -149,4 +149,4 @@
 
 * [DOMContentLoaded](https://cloud.tencent.com/developer/article/1132271?from=article.detail.1829843)
 * [DOMContentLoaded](https://cloud.tencent.com/developer/article/1829843)
-
+* [css加载会造成阻塞吗](https://www.cnblogs.com/chenjg/p/7126822.html)
