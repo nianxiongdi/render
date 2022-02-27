@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            /* background-image: url('http://localhost:8000/loss.jpg') */
+        }
+    </style>
+</head>
+<body>
+    <div  >
+123
+    </div>
+    <img  src="http://localhost:8000/red.png">
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function () {
+            console.log("DOMContentLoaded"+new Date()) 
+        });
+        // 当整个页面及所有依赖资源如样式表和图片都已完成加载时，将触发load事件。
+        window.addEventListener("load",function () {
+            console.log("load"+new Date()) 
+        });
+    </script>
+</body>
+</html>

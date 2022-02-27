@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script>
+        setTimeout(() => {
+            // 可以打印出dom
+            console.log('>>> h1 dom', document.querySelector('h1'))
+        }, 0);
+    </script>
+
+    <!--  该css延迟3s后，才可以加载 -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/index.css"></link>
+
+</head>
+<body>
+    <h1>h1</h1>
+
+    <script>
+        console.log('before css')
+    </script>
+</body>
+</html>

@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
     var filename = path.basename(req.url);
     var extension = path.extname(filename);
     console.log(extension)
-    if (extension === '.jpg' || extension === '.js')
+    if ( extension === '.css' )
         sleep()
         console.log("The file " + filename + " was requested.");
     next();
@@ -28,6 +28,10 @@ app.use(function (req, res, next) {
 
 app.use(express.static(path.join(__dirname, 'img')),()=>{
     console.log('111')
+});
+
+app.use(express.static(path.join(__dirname, 'css')),()=>{
+    console.log('222')
 });
 
 

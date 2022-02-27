@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        .box{
-            /* background-image: url('http://localhost:8000/loss.jpg') */
-        }
-    </style>
+    <script>
+         document.addEventListener("DOMContentLoaded",function () {
+            console.log("DOMContentLoaded"+new Date())
+            console.log(getComputedStyle(document.querySelector('h1'), null).color)
+        });
+    </script>
+    <script>
+        console.log('>>> execute script.')
+    </script>
+    <!--  该css延迟3s后，才可以加载 -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/index.css"></link>
+
 </head>
 <body>
-    <div  >
-123
-    </div>
-    <img   src="http://localhost:8000/loss.jpg">
-    <img   src="http://localhost:8000/loss.jpg">
+    <h1>h1</h1>
+    <image src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"/>
+    <script>
+        console.log('loading...')
+    </script>
 </body>
 </html>
+
+ 
